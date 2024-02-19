@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20240216190446"
+  },
+  "applications": ["Tkisd"],
+  "entityTableName": "orders",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "trxType",
+      "fieldType": "TrxType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "BKASH,CASH"
+    },
+    {
+      "fieldName": "userId",
+      "fieldType": "Long"
+    }
+  ],
+  "name": "Orders",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "courses",
+      "relationshipName": "courseId",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

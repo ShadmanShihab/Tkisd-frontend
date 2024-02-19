@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "Tkisd",
+    "buildTool": "maven",
+    "clientFramework": "react",
+    "databaseType": "mysql",
+    "devServerPort": 9060,
+    "entities": ["Category", "Courses", "Orders", "Instructor"],
+    "jhipsterVersion": "8.1.0",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1708110346000,
+    "nativeLanguage": "en",
+    "packageFolder": "com/project/tkisd",
+    "packageName": "com.project.tkisd",
+    "skipServer": true
+  }
+}

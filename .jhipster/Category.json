@@ -1,0 +1,22 @@
+{
+  "annotations": {
+    "changelogDate": "20240216190246"
+  },
+  "applications": ["Tkisd"],
+  "entityTableName": "category",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "categoryName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Category",
+  "pagination": "pagination",
+  "relationships": [],
+  "service": "serviceImpl"
+}

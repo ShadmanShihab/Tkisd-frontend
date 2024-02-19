@@ -1,0 +1,9 @@
+{
+  "tkisdApp": {
+    "TrxType": {
+      "null": "",
+      "BKASH": "BKASH",
+      "CASH": "CASH"
+    }
+  }
+}
