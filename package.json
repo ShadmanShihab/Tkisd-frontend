@@ -94,7 +94,7 @@
     "fork-ts-checker-webpack-plugin": "9.0.2",
     "generator-jhipster": "8.1.0",
     "html-webpack-plugin": "5.5.4",
-    "husky": "8.0.3",
+    "husky": "^8.0.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",

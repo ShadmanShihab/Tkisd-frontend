@@ -35,11 +35,15 @@ Development Ribbon
 }
 
 /* ==========================================================================
-Navbar styles
+Navbar styles #353d47
 ========================================================================== */
 .jh-navbar {
-  background-color: #353d47;
+  background-color: white;
+  margin: 10px 0;
   padding: 0.2em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .profile-image {
     margin: -10px 0px;
     height: 40px;
@@ -107,9 +111,9 @@ Navbar styles
 .brand-title {
   font-size: 1.25rem;
   margin-left: 0.25rem;
-  color: $header-color;
+  color: #ff444f;
   &:hover {
-    color: $header-color-hover;
+    color: #fd5a65;
     text-decoration: none;
   }
 }
@@ -120,4 +124,12 @@ Navbar styles
   position: absolute;
   top: 0px;
   z-index: 1031;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.container-fluid {
+  width: 1440px;
 }
