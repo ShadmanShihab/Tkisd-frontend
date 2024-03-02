@@ -117,11 +117,16 @@ export const Category = () => {
                   <Translate contentKey="tkisdApp.category.categoryName">Category Name</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('categoryName')} />
                 </th>
+                <th>
+                  <Translate contentKey="tkisdApp.category.uuid">UUID</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('uuid')} />
+                </th>
                 <th />
               </tr>
             </thead>
             <tbody>
-              {categoryList.map((category, i) => (
+              {
+                categoryList.map((category, i) => (
                 <tr key={`entity-${i}`} data-cy="entityTable">
                   <td>
                     <Button tag={Link} to={`/category/${category.id}`} color="link" size="sm">
@@ -129,6 +134,7 @@ export const Category = () => {
                     </Button>
                   </td>
                   <td>{category.categoryName}</td>
+                  <td>{category.uuid}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`/category/${category.id}`} color="info" size="sm" data-cy="entityDetailsButton">
