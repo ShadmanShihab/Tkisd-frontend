@@ -8,7 +8,7 @@ import { Collapse, Nav, Navbar, NavbarToggler } from 'reactstrap';
 import { useAppDispatch } from 'app/config/store';
 import { setLocale } from 'app/shared/reducers/locale';
 import { AccountMenu, AdminMenu, EntitiesMenu, LocaleMenu } from '../menus';
-import { Brand, Home } from './header-components';
+import { Brand, Category, Home } from './header-components';
 
 export interface IHeaderProps {
   isAuthenticated: boolean;
@@ -52,6 +52,7 @@ const Header = (props: IHeaderProps) => {
         <Brand />
         <div className="middle">
           <Home />
+          <Category />
         </div>
         <div className="end">
           <Collapse isOpen={menuOpen} navbar>

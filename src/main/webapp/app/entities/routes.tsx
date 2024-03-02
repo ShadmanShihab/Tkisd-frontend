@@ -5,8 +5,8 @@ import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 
 import Category from './category';
 import Courses from './courses';
-import Orders from './orders';
 import Instructor from './instructor';
+import Orders from './orders';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
@@ -14,7 +14,7 @@ export default () => {
     <div>
       <ErrorBoundaryRoutes>
         {/* prettier-ignore */}
-        <Route path="category/*" element={<Category />} />
+        <Route path="/category" element={<Category />} />
         <Route path="courses/*" element={<Courses />} />
         <Route path="orders/*" element={<Orders />} />
         <Route path="instructor/*" element={<Instructor />} />
